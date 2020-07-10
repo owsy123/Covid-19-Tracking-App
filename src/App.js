@@ -1,9 +1,8 @@
 import React from 'react'
 import {Cards,Chart,CountryPicker,Header} from './components'
 import styles from './App.module.css'
-import Slider from './components/slider/slider'
+// import Slider from './components/slider/slider'
 import { FetchData } from './api'
-// import cover from './images/cover.jpeg'
 
 
 class App extends React.Component {
@@ -28,8 +27,7 @@ class App extends React.Component {
         return (
             <div className={styles.container}>
                 <Header/>
-                <Slider/>
-                {/* <img className = {styles.image} src={cover} alt='covid'/> */}
+                {/* <Slider/> */}
                 <Cards data={data}/> 
                 <CountryPicker className={styles.cpicker} handleCountryChange={this.handleCountryChange}/>
                 <Chart data={data} country={country}/>
